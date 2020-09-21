@@ -29,3 +29,27 @@ func ExampleAvg()  {
 
 	//Output: 2000000
 }
+
+func ExampleTotalInCategory(){
+	payments := []types.Payment{
+	  {
+		ID:			1,
+		Amount:		93_000,
+		Category: 	"Самбусахона",
+	  },
+	  {
+		ID:			2,
+		Amount:		87_000,
+		Category: 	"Самбусахона",
+	  },
+	  {
+		ID:			3,
+		Amount:		12_000,
+		Category: 	"Мантухона",
+	  },
+	}
+  
+	fmt.Println(TotalInCategory(payments, "Мантухона"))
+  
+	//Output: 12000
+  }
