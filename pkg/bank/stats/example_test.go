@@ -1,7 +1,7 @@
 package stats
 
 import (
-	"github.com/usmon1983/myDZ/pkg/bank/stats"
+	"github.com/usmon1983/myDZ/pkg/bank/types"
 	"fmt"
 )
 
@@ -26,7 +26,6 @@ func ExampleAvg()  {
 	PaymentAvg := Avg(payments)
 
 	fmt.Println(PaymentAvg)
-	}
 
-	//Output: 20_000_00
+	//Output: 2000000
 }
